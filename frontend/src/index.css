@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  background: #f8faf8;
+}
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 240px;
+  height: 100vh;
+
+  background: #ffffff;
+
+  border-right: 1px solid #e5e7eb;
+
+  display: flex;
+  flex-direction: column;
+
+  z-index: 1000;
+}
+
+/* Logo */
+
+.sidebar-logo {
+  height: 80px;
+
+  display: flex;
+  align-items: center;
+
+  padding-left: 28px;
+
+  font-size: 24px;
+  font-weight: 700;
+
+  color: #16a34a;
+}
+
+/* Navigation */
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+
+  padding: 20px 14px;
+
+  gap: 6px;
+}
+
+/* Links */
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+
+  height: 48px;
+
+  padding: 0 16px;
+
+  border-radius: 8px;
+
+  text-decoration: none;
+
+  font-size: 15px;
+  font-weight: 500;
+
+  color: #1f2937;
+
+  transition: all 0.2s ease;
+}
+
+.sidebar-link:hover {
+  background: #f0fdf4;
+  color: #15803d;
+}
+
+/* Active link */
+
+.sidebar-link.active {
+  background: #dcfce7;
+  color: #15803d;
+
+  font-weight: 600;
+}
+.app-layout {
+  min-height: 100vh;
+}
+
+.main-content {
+  margin-left: 240px;
+  min-height: 100vh;
+  width: calc(100% - 240px);
+}
