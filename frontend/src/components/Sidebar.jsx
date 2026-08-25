@@ -1,69 +1,5 @@
-// import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
-// const Sidebar = () => {
-//     const menuItems = [
-//         {
-//             name: "Dashboard",
-//             path: "/dashboard",
-//         },
-//         {
-//             name: "Farms",
-//             path: "/farm",
-//         },
-//         {
-//             name: "Crops",
-//             path: "/crops",
-//         },
-//         {
-//             name: "Income",
-//             path: "/income",
-//         },
-//         {
-//             name: "Expense",
-//             path: "/expenses",
-//         },
-//         {
-//             name: "Budget",
-//             path: "/budget",
-//         },
-//         {
-//             name: "Report",
-//             path: "/reports",
-//         },
-//         {
-//             name: "AI Assitant",
-//             path: "/ai-assistance",
-//         },
-//     ];
-
-//     return (
-//         <aside className="sidebar">
-//             {/* Logo */}
-//             <div className="sidebar-logo">
-//                 AgriTrack
-//             </div>
-
-//             {/* Navigation */}
-//             <nav className="sidebar-nav">
-//                 {menuItems.map((item) => (
-//                     <NavLink
-//                         key={item.path}
-//                         to={item.path}
-//                         className={({ isActive }) =>
-//                             `sidebar-link ${isActive ? "active" : ""}`
-//                         }
-//                     >
-//                         {item.name}
-//                     </NavLink>
-//                 ))}
-//             </nav>
-//         </aside>
-//     );
-// };
-
-// export default Sidebar;
-
-import { NavLink } from "react-router-dom";
 import {
     LayoutDashboard,
     Sprout,
@@ -75,9 +11,12 @@ import {
     Bot,
     X,
     Leaf,
+    LogOut,
 } from "lucide-react";
 
 const Sidebar = ({ open, setOpen }) => {
+    const navigate = useNavigate();
+
     const menuItems = [
         {
             name: "Dashboard",
@@ -120,6 +59,17 @@ const Sidebar = ({ open, setOpen }) => {
             icon: Bot,
         },
     ];
+
+    const handleLogout = () => {
+        // Remove authentication token
+        localStorage.removeItem("token");
+
+        // Close sidebar on mobile
+        setOpen(false);
+
+        // Go to Home page
+        navigate("/");
+    };
 
     return (
         <>
@@ -201,7 +151,6 @@ const Sidebar = ({ open, setOpen }) => {
                                         rounded-2xl px-5 py-4
                                         text-[17px] font-medium
                                         transition-all duration-200
-
                                         ${isActive
                                             ? "bg-green-700 text-white shadow-lg shadow-green-100"
                                             : "text-slate-600 hover:bg-green-50 hover:text-green-700"
@@ -234,6 +183,25 @@ const Sidebar = ({ open, setOpen }) => {
                         })}
                     </div>
                 </nav>
+
+                {/* ================= LOGOUT ================= */}
+                <div className="border-t border-slate-100 p-3">
+                    <button
+                        type="button"
+                        onClick={handleLogout}
+                        className="group flex w-full items-center gap-4 rounded-2xl px-5 py-4 text-[17px] font-medium text-slate-600 transition-all duration-200 hover:bg-red-50 hover:text-red-600"
+                    >
+                        <LogOut
+                            size={24}
+                            strokeWidth={2}
+                            className="shrink-0 text-slate-500 transition-colors duration-200 group-hover:text-red-600"
+                        />
+
+                        <span>
+                            Log Out
+                        </span>
+                    </button>
+                </div>
             </aside>
         </>
     );
