@@ -127,7 +127,7 @@ function Dashboard() {
     // --------------------------------------------------
 
     return (
-        <div className="min-h-screen bg-slate-50">
+        <div className="min-h-screen bg-slate-50 font-serif">
 
             {/* SIDEBAR */}
             <Sidebar
@@ -156,7 +156,7 @@ function Dashboard() {
                         animate={{ opacity: 1, y: 0 }}
                         className="mb-8"
                     >
-                        <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
+                        <div className="font-serif flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
 
                             <div>
                                 <p className="text-sm font-medium text-green-700">

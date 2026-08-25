@@ -428,7 +428,7 @@ export default function Budget() {
     // --------------------------------------------------
 
     return (
-        <div className="min-h-screen bg-slate-50">
+        <div className="font-serif min-h-screen bg-slate-50">
 
             {/* ==================================================
                 SAME SIDEBAR AS EXPENSE / REPORTS

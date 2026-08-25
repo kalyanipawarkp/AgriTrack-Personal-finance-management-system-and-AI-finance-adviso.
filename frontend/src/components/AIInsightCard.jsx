@@ -60,7 +60,7 @@ function AIInsightCard() {
             className="relative overflow-hidden rounded-3xl border border-green-100 bg-gradient-to-br from-green-50 via-white to-lime-50 p-6 shadow-sm"
         >
             {/* Decorative glow */}
-            <div className="absolute -right-16 -top-16 h-40 w-40 rounded-full bg-green-200/30 blur-3xl" />
+            <div className="font-serif absolute -right-16 -top-16 h-40 w-40 rounded-full bg-green-200/30 blur-3xl" />
 
             <div className="relative">
 

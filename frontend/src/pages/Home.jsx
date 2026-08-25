@@ -55,12 +55,10 @@ function Home() {
                         animate={{ opacity: 1, x: 0 }}
                         className="flex items-center gap-2"
                     >
-                        <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-green-600 text-white shadow-lg shadow-green-600/20">
-                            <Leaf size={22} />
-                        </div>
+
 
                         <div>
-                            <h1 className="text-xl font-bold tracking-tight text-green-800">
+                            <h1 className="text-xl font-bold tracking-tight font-serif text-green-800">
                                 AgriTrack
                             </h1>
                             <p className="text-[10px] font-medium uppercase tracking-widest text-slate-500">
@@ -72,21 +70,21 @@ function Home() {
                     <div className="hidden items-center gap-8 md:flex">
                         <a
                             href="#home"
-                            className="text-sm font-medium text-green-700 transition-colors hover:text-green-900"
+                            className="text-sm font-medium text-green-700 font-serif transition-colors hover:text-green-900"
                         >
                             Home
                         </a>
 
                         <a
                             href="#features"
-                            className="text-sm font-medium text-slate-600 transition-colors hover:text-green-700"
+                            className="text-sm font-medium text-slate-600 font-serif transition-colors hover:text-green-700"
                         >
                             Features
                         </a>
 
                         <a
                             href="#about"
-                            className="text-sm font-medium text-slate-600 transition-colors hover:text-green-700"
+                            className="text-sm font-medium text-slate-600 font-serif transition-colors hover:text-green-700"
                         >
                             About
                         </a>
@@ -105,14 +103,14 @@ function Home() {
                     <div className="flex items-center gap-3">
                         <Link
                             to="/login"
-                            className="hidden rounded-xl px-4 py-2 text-sm font-semibold text-green-700 transition hover:bg-green-50 sm:block"
+                            className="hidden font-serif rounded-xl px-4 py-2 text-sm font-semibold text-green-700 transition hover:bg-green-50 sm:block"
                         >
                             Login
                         </Link>
 
                         <Link
                             to="/register"
-                            className="rounded-xl bg-green-700 px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-green-700/20 transition-all duration-300 hover:-translate-y-0.5 hover:bg-green-800 hover:shadow-xl"
+                            className="font-serif rounded-xl bg-green-700 px-5 py-2.5 text-sm font-semibold text-white  transition-all duration-300 hover:-translate-y-0.5  hover:shadow-xl"
                         >
                             Get Started
                         </Link>
@@ -150,14 +148,15 @@ function Home() {
                             Smart Financial Management for Farmers
                         </motion.div>
 
-                        <h2 className="max-w-2xl text-5xl font-extrabold leading-tight tracking-tight text-slate-900 sm:text-6xl">
+
+                        <h2 className="font-serif max-w-2xl text-5xl font-extrabold leading-tight tracking-tight text-slate-900 sm:text-6xl ">
                             Grow Your Farm.
-                            <span className="block text-green-700">
+                            <span className="block text-green-700 font-serif">
                                 Manage Smarter.
                             </span>
                         </h2>
 
-                        <p className="mt-6 max-w-xl text-lg leading-8 text-slate-600">
+                        <p className="font-serif mt-6 max-w-xl text-lg leading-8 text-slate-600">
                             AgriTrack helps farmers manage crops, track expenses,
                             monitor income, control budgets and make smarter
                             financial decisions—all in one place.
@@ -165,7 +164,7 @@ function Home() {
 
                         <div className="mt-8 flex flex-wrap gap-4">
 
-                            <button className="group flex items-center gap-2 rounded-xl bg-green-700 px-6 py-3.5 font-semibold text-white shadow-xl shadow-green-700/20 transition-all duration-300 hover:-translate-y-1 hover:bg-green-800">
+                            <button className="font-serif group flex items-center gap-2 rounded-xl bg-green-700 px-6 py-3.5 font-semibold text-white shadow-xl shadow-green-700/20 transition-all duration-300 hover:-translate-y-1 hover:bg-green-800">
                                 Start Managing
 
                                 <ArrowRight
@@ -174,7 +173,7 @@ function Home() {
                                 />
                             </button>
 
-                            <button className="rounded-xl border border-green-200 bg-white px-6 py-3.5 font-semibold text-green-700 transition-all duration-300 hover:-translate-y-1 hover:border-green-300 hover:bg-green-50">
+                            <button className="font-serif rounded-xl border border-green-200 bg-white px-6 py-3.5 font-semibold text-green-700 transition-all duration-300 hover:-translate-y-1 hover:border-green-300 hover:bg-green-50">
                                 Explore Features
                             </button>
 
@@ -220,16 +219,16 @@ function Home() {
                             <div className="flex items-center justify-between">
 
                                 <div>
-                                    <p className="text-sm font-medium text-slate-500">
+                                    <p className="font-serif text-sm font-medium text-slate-500">
                                         Farm Overview
                                     </p>
 
-                                    <h3 className="mt-1 text-2xl font-bold text-slate-900">
+                                    <h3 className="font-serif mt-1 text-2xl font-bold text-slate-900">
                                         Your Farm
                                     </h3>
                                 </div>
 
-                                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-green-100 text-green-700">
+                                <div className="font-serif flex h-12 w-12 items-center justify-center rounded-2xl bg-green-100 text-green-700">
                                     <Sprout size={25} />
                                 </div>
 
@@ -258,17 +257,17 @@ function Home() {
                             <div className="mt-6 grid grid-cols-2 gap-4">
 
                                 <div className="rounded-2xl bg-slate-50 p-4">
-                                    <p className="text-xs text-slate-500">
+                                    <p className="font-serif text-xs text-slate-500">
                                         Total Income
                                     </p>
 
-                                    <p className="mt-1 text-xl font-bold text-slate-900">
+                                    <p className="font-serif mt-1 text-xl font-bold text-slate-900">
                                         ₹1,50,000
                                     </p>
                                 </div>
 
-                                <div className="rounded-2xl bg-green-50 p-4">
-                                    <p className="text-xs text-slate-500">
+                                <div className="font-serif rounded-2xl bg-green-50 p-4">
+                                    <p className=" text-xs text-slate-500">
                                         Profit
                                     </p>
 
@@ -290,7 +289,7 @@ function Home() {
                             }}
                             className="absolute -right-5 -top-6 rounded-2xl border border-green-100 bg-white p-4 shadow-xl sm:-right-10"
                         >
-                            <div className="flex items-center gap-3">
+                            <div className="font-serif flex items-center gap-3">
 
                                 <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-green-100 text-green-700">
                                     <Bot size={20} />
@@ -319,7 +318,7 @@ function Home() {
                             }}
                             className="absolute -bottom-5 -left-5 rounded-2xl border border-green-100 bg-white p-4 shadow-xl sm:-left-10"
                         >
-                            <div className="flex items-center gap-3">
+                            <div className="font-serif flex items-center gap-3">
 
                                 <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-green-100 text-green-700">
                                     <ShieldCheck size={20} />
@@ -348,7 +347,7 @@ function Home() {
                 id="features"
                 className="bg-white px-6 py-24 lg:px-8"
             >
-                <div className="mx-auto max-w-7xl">
+                <div className="font-serif mx-auto max-w-7xl">
 
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
@@ -418,7 +417,7 @@ function Home() {
                 id="about"
                 className="bg-green-50 px-6 py-24 lg:px-8"
             >
-                <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-2">
+                <div className="font-serif mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-2">
 
                     <motion.div
                         initial={{ opacity: 0, x: -30 }}
@@ -475,7 +474,7 @@ function Home() {
             {/* FOOTER */}
             <footer className="bg-slate-950 px-6 py-10 text-white lg:px-8">
 
-                <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 sm:flex-row">
+                <div className="font-serif mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 sm:flex-row">
 
                     <div className="flex items-center gap-2">
                         <Leaf size={20} className="text-green-400" />

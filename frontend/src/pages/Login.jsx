@@ -49,7 +49,7 @@ function Login() {
     return (
         <div className="min-h-screen bg-gradient-to-br from-green-50 via-white to-lime-50">
 
-            <div className="mx-auto grid min-h-screen max-w-7xl lg:grid-cols-2">
+            <div className="font-serif mx-auto grid min-h-screen max-w-7xl lg:grid-cols-2">
 
                 {/* LEFT SIDE */}
                 <motion.div
