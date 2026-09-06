@@ -240,7 +240,7 @@ Sensitive credentials such as the Gemini API key are stored in environment varia
 
 ---
 
-## 🔌 Main API Modules
+##  Main API Modules
 
 The backend provides REST API modules for:
 
@@ -267,7 +267,7 @@ The endpoint accepts a farmer's question and generates an AI financial insight u
 
 ---
 
-## 📦 Installation & Setup
+##  Installation & Setup
 
 ### 1. Clone the Repository
 
@@ -294,7 +294,7 @@ npm install
 
 ---
 
-## 🔑 Environment Variables
+##  Environment Variables
 
 Create a `.env` file inside the `backend` folder.
 
@@ -315,7 +315,7 @@ GEMINI_API_KEY=your_gemini_api_key
 
 ---
 
-## 🗄️ Database Setup
+##  Database Setup
 
 1. Install MySQL.
 2. Create the AgriTrack database.
@@ -327,7 +327,7 @@ Make sure the database name and credentials match your environment configuration
 
 ---
 
-## ▶️ Running the Application
+##  Running the Application
 
 ### Start Backend
 
@@ -359,7 +359,7 @@ http://localhost:5173
 
 ---
 
-## 📱 Responsive Interface
+## Responsive Interface
 
 The application is designed with responsive layouts so that major parts of the application can be accessed across different screen sizes.
 
